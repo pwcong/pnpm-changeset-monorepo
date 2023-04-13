@@ -1,0 +1,9 @@
+{
+  "name": "pnpm-changeset-monorepo",
+  "private": true,
+  "author": "Weicong Peng",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "dts-cli": "^2.0.0"
+  }
+}
