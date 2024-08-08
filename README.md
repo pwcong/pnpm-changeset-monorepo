@@ -11,6 +11,7 @@ Demo for Monorepo with PNPM and Changesets.
 2. create `pnpm-workspace.yaml` file
 ```yaml
 packages:
+  - 'apps/*'
   - 'packages/*'
 ```
 
@@ -33,20 +34,14 @@ strict-peer-dependencies=false
 ```
 
 # Add Package
-1. install [dts-cli](https://github.com/weiran-zsd/dts-cli) 
-```shell
-> pnpm install -w --save-dev dts-cli
-```
-
-2. create `packages` folder
+1. create `packages` folder
 ```shell
 > mkdir packages
 ```
 
-3. create package 
+2. create package 
 ```shell
-# create package
-> pnpm dts create packages/[package name]
+> npx @modern-js/create@latest packages/[package name]
 ```
 
 # Binarary Package
